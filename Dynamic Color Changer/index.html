@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            transition: all ease 0.3s;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:10px;
+        }
+        button {
+            height: 100px;
+            width: 100px;
+            outline:none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" id="violet"></button>
+        <button class="button" id="indigo"></button>
+        <button class="button" id="blue"></button>
+        <button class="button" id="green"></button>
+        <button class="button" id="yellow"></button>
+        <button class="button" id="orange"></button>
+        <button class="button" id="red"></button>
+        <button class="button" id="cyan"></button>
+    </div>
+</body>
+
+<script>
+    let btnList = document.querySelectorAll("button");
+    let body = document.querySelector("body");
+
+    btnList.forEach((btn)=>{
+        btn.style.backgroundColor = btn.id;
+        btn.addEventListener("click", (event)=>{
+            body.style.backgroundColor = event.target.id;
+        });
+    });
+</script>
+
+</html>
