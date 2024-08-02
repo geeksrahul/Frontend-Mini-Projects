@@ -11,6 +11,36 @@ body {
     height: 100vh;
 }
 
+.search-card{
+    width: 400px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    padding: 0px 2px;
+}
+
+.search-card > *{
+    background: transparent;
+    border:none;
+    outline: none;
+}
+
+.search-card input{
+    width: 350px;
+    padding-left: 10px;
+}
+
+.search-card button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(233, 230, 225);
+    cursor: pointer;
+}
+
 .profile-card {
     background-color: #ffffff;
     border-radius: 8px;
