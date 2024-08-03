@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all ease 0.2s;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8BC6EC;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    padding: 20px 10px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    gap : 15px !important;
+}
+
+.profile-card {
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px 0px black;
+}
+
+.thumbnail {
+    width: 100%;
+    position: relative;
+}
+
+.thumbnail img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    transform-origin: center center;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    object-fit: cover;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 3px 0px black;
+}
+
+.liked {
+    position: absolute;     
+    top:50%;
+    left:50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    color:red;
+    animation-name : none;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+.icons {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+}
+
+.thumbnail-img, i {
+    cursor: pointer;
+}
+
+.save {
+    position: absolute;
+    right: 0;
+}
+
+.caption {
+    font-size: 1rem;
+    overflow: hidden scroll;
+}
+
+#username {
+    font-weight: 500;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.follow-btn {
+    background-color: #068af5;
+    color: white;
+}
+
+.unfollow-btn {
+    background-color: #b7babd;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes postliked {
+    0% {
+        scale : 1;
+        color:white;
+    }
+    50% {
+        opacity: 1;
+        scale : 1.4;
+        color:red;
+    }
+    100%{
+        opacity: 2;
+    }
+}
