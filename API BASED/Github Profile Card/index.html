@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+     <div class="search-card">
+        <input type="text" name="" id="searchInput">
+        <button id="btnSearch"> <i class="fa-solid fa-search"> </i></button>
+    </div>
+    <div class="profile-card">
+        <div class="card-header">
+            <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Profile Picture" class="profile-img" id="pfp">
+            <div class="profile-info">
+                <h2 class="profile-name" id="name">John Doe</h2>
+                <p class="profile-username" id="username">@johndoe</p>
+                <p class="profile-bio" id="bio">Full Stack Developer | Open Source Enthusiast | Coffee Lover</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-user-friends"></i>
+                    <span class="stat-count" id="followers">1,234</span>
+                    <span class="stat-label">Followers</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-plus"></i>
+                    <span class="stat-count" id="following">567</span>
+                    <span class="stat-label">Following</span>
+                </div>
+            </div>
+            <a href="https://github.com/johndoe" id="githubLink" class="profile-link" target="_blank">
+                View GitHub Profile
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

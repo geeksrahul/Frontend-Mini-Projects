@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <div class="input-container">
+                <input type="text" name="" id="tasksInput" placeholder="Task to be done..." maxlength="26">
+                <input type="button" value="Add" id="btnAddTask">
+            </div>
+            <div class="notes-container">
+                <!-- NOTES SCHEMA -->
+                <!-- <div class="notes" id="1">
+                    <span class="notes-text">
+                        I will wake up at 8 in Morning
+                    </span>
+                    <button class="notes-delete" id="1">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div>
+                -->
+                <div class="notes-not-found">
+                    <i class="fa-regular fa-folder-open"></i>
+                    <span>Notes Not Found !</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

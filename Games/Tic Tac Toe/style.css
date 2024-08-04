@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(74, 74, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.game-container {
+    height: 350px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 7px;  /*Thala for reason*/
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.temp {
+    background-color: antiquewhite;
+}
+
+.winning-line {
+    background-color: rgb(189, 148, 148) !important;
+}
+
+.disabled {
+    background-color: rgb(176, 183, 183);
+}
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.result-msg {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size:1rem;
+}
+
+.btn-reset {
+    background-color: rgb(255, 153, 0);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color : black;
+    height: 30px;
+}
+
+@media (width <= 425px) {
+    .container {
+        scale : 0.9;
+    }
+}
+@media (width <= 375px) {
+    .container {
+        scale : 0.8;
+    }
+}
+@media (width <= 325px) {
+    .container {
+        scale : 0.7;
+    }
+}

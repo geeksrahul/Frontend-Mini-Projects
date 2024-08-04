@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2260CB;
+}
+
+.app-container {
+    width: 400px;
+    height: 400px;
+    background-color: #FFFDFF;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.input-container {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.input-container input[type="text"]{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+.input-container input[type="button"]{
+    height: 40px;
+    width: 15%;
+    background-color: rgb(20, 100, 181);
+    color:white;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.notes-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    overflow:hidden scroll ;
+}
+
+.notes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #C5E0E3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.notes .notes-text {
+    font-size: 1.1rem;
+}
+
+.notes .notes-delete { 
+    width:35px;
+    height: 35px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    background-color: #221FA0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.notes-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap:10px;
+}
+
+.notes-not-found i {
+    font-size: 5rem;
+    background-color: rgb(100, 133, 133);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-not-found span {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+@media (width <= 450px ){
+    .app-container {
+        scale : 0.8;
+    }
+}
+
+@media (width <= 375px ){
+    .app-container {
+        scale : 0.7;
+    }
+}
+
+@media (width <= 320px ){
+    .app-container {
+        scale : 0.6;
+    }
+}
