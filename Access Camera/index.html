@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Access Camera </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+        }
+        video {
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px white;
+        }
+    </style>
+</head>
+<body>
+    <video src=""></video>
+    <script>
+        (async ()=>{
+            const video = document.querySelector('video');
+            try {
+                const stream = await window.navigator.mediaDevices.getUserMedia({video:true});
+                video.srcObject = stream;
+                video.play();
+            }catch (err) {
+                alert('Error accessing camera !');
+            }
+        })();
+    </script> 
+</body>
+</html>
