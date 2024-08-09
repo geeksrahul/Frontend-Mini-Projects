@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+</head>
+<body>
+    <div class="container">
+        <form action="" method="POST" name="alarm-form" class="alarm-form">
+            <h1> <i class="fa-solid fa-clock"></i> Set Alarm</h1>
+            <!-- <div class="time">
+                <select name="hour" id="hour"></select>
+                <select name="minute" id="minute"></select>
+            </div> -->
+            <input type="time" name="time" id="time" autofocus>
+            <input type="text" name="title" id="title" placeholder="Alarm Message Here...">
+            <input type="button" value="Set Alarm" id="btnSet" name="btnSetAlarm">
+        </form>
+
+        <!-- <div class="alarm">
+            <div class="time">
+                19:23
+            </div>
+            <div class="message">
+                Alarm Message
+            </div>
+            <div class="duration">
+                Ring In 23:23:34
+            </div>
+        </div> -->
+        <a href="index.html" id="btnReset" style="display:none;"> Reset </a>
+        
+    </div>
+    <audio src="alarm.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

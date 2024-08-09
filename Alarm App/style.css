@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container{
+    height: 250px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    background: white;
+    box-shadow: 5px 5px 5px black, inset -1px -1px 10px rgb(150, 150, 150);
+}
+
+.container form {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container form h1 {
+    font-size: 1.8rem;
+}
+
+/* input style */
+.container form input {
+    font-size: 1rem;
+    height: 45px;
+    width: 100%;
+    background: none;
+    outline: none;
+    padding: 0px 10px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+
+/* button style */
+#btnSet {
+    background-color: rgb(201, 199, 199);
+    border:none;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+}
+
+#btnSet:hover{
+    background-color: rgb(9, 127, 245);
+    color:white;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px black;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* Alarm */
+
+.alarm {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alarm .time {
+    font-size: 2.1rem;
+    background-color: rgb(176, 164, 164);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.alarm i{
+    font-size: 2rem;
+}
+
+#btnReset {
+    background-color: rgb(209, 22, 22);
+    color:white;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 30px;
+}
